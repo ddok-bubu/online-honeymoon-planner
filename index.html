@@ -2257,6 +2257,14 @@
   function setView(viewName) {
     currentView = viewName;
     renderApp();
+    // 가이드(검색) 페이지로 이동할 때 화면을 최상단으로 스크롤합니다.
+    if (viewName === "guide") {
+      try {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } catch (e) {
+        window.scrollTo(0, 0);
+      }
+    }
   }
 
   // 헤더 렌더링 함수
@@ -2535,29 +2543,24 @@
   function showPasswordModal() {
     const modal = document.createElement("div");
     modal.className = "modal active";
+    // 헤더를 제거한 간단한 암호 입력 모달
     modal.innerHTML = `
       <div class="modal-content" style="max-width: 500px;">
-        <div class="modal-header border-b px-4 py-3 flex items-center justify-between">
-          <div class="modal-title"></div>
-          <button onclick="closeModal()" aria-label="닫기" class="text-gray-600 hover:text-gray-800 focus:ring-2 focus:ring-primary rounded px-2 py-1" tabindex="0">
-            <i data-lucide="x" class="w-5 h-5"></i>
-          </button>
-        </div>
         <div class="p-8">
           <h3 class="text-3xl font-bold mb-4 text-center" style="color: ${colors.primary};">
             <i data-lucide="lock" class="w-8 h-8 inline-block mr-2"></i>
             암호 입력
           </h3>
-                    <p class="text-gray-600 mb-6 text-center">해당 서비스를 이용하시려면 암호를 입력하세요</p>
-                    <input type="password" id="password-input" class="w-full border-2 rounded-xl p-4 text-center text-2xl font-bold mb-4 focus:ring-2 focus:ring-primary focus:border-primary" style="border-color: ${colors.primary}55;" placeholder="암호 입력" maxlength="4">
-                    <div id="password-error" class="text-red-500 text-sm text-center mb-4 hidden">❌ 암호가 일치하지 않습니다</div>
-                    <div class="flex gap-3">
-                        <button onclick="closeModal()" class="flex-1 bg-gray-300 text-gray-700 font-bold py-3 px-6 rounded-xl hover:bg-gray-400 transition">취소</button>
-                        <button onclick="checkPassword()" class="flex-1 text-white font-bold py-3 px-6 rounded-xl hover:opacity-90 transition" style="background-color: ${colors.primary};">확인</button>
-                    </div>
-                </div>
-            </div>
-        `;
+          <p class="text-gray-600 mb-6 text-center">해당 서비스를 이용하시려면 암호를 입력하세요</p>
+          <input type="password" id="password-input" class="w-full border-2 rounded-xl p-4 text-center text-2xl font-bold mb-4 focus:ring-2 focus:ring-primary focus:border-primary" style="border-color: ${colors.primary}55;" placeholder="암호 입력" maxlength="4">
+          <div id="password-error" class="text-red-500 text-sm text-center mb-4 hidden">❌ 암호가 일치하지 않습니다</div>
+          <div class="flex gap-3">
+            <button onclick="closeModal()" class="flex-1 bg-gray-300 text-gray-700 font-bold py-3 px-6 rounded-xl hover:bg-gray-400 transition">취소</button>
+            <button onclick="checkPassword()" class="flex-1 text-white font-bold py-3 px-6 rounded-xl hover:opacity-90 transition" style="background-color: ${colors.primary};">확인</button>
+          </div>
+        </div>
+      </div>
+    `;
     document.body.appendChild(modal);
     const input = document.getElementById("password-input");
     input.focus();
