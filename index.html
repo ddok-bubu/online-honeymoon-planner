@@ -2294,9 +2294,6 @@
         </div>`;
   }
 
-  // 셀렉트 박스 스타일 개선: 화살표가 너무 오른쪽에 치우치지 않도록 padding-right 조정
-  const selectStyle = `border-color: ${colors.primary}55; background-color: ${colors.secondary}; padding-right: 2.5rem;`;
-
   // 여행지 카드 렌더링 함수
   function renderDestinationCard(dest) {
     const isBest =
@@ -2431,7 +2428,9 @@
             <div class="w-full lg:w-auto flex-grow"><label for="month-select" class="block text-sm font-bold text-gray-700 mb-1" style="color: ${
               colors.text
             };">여행 희망 달</label>
-                <select id="month-select" class="w-full lg:w-40 border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="${selectStyle}">
+                <select id="month-select" class="w-full lg:w-40 border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="border-color: ${
+                  colors.primary
+                }55; background-color: ${colors.secondary};">
                     <option value="0">-- 모든 달 📅 --</option>${[
                       ...Array(12).keys(),
                     ]
@@ -2447,7 +2446,9 @@
             <div class="w-full lg:w-auto flex-grow"><label for="continent-select" class="block text-sm font-bold text-gray-700 mb-1" style="color: ${
               colors.text
             };">대륙</label>
-                <select id="continent-select" class="w-full lg:w-40 border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="${selectStyle}">
+                <select id="continent-select" class="w-full lg:w-40 border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="border-color: ${
+                  colors.primary
+                }55; background-color: ${colors.secondary};">
                     <option value="모두">-- 모든 대륙 🌎 --</option>${[
                       "아시아",
                       "오세아니아",
@@ -2467,7 +2468,9 @@
             <div class="w-full lg:w-auto flex-grow"><label for="budget-select" class="block text-sm font-bold text-gray-700 mb-1" style="color: ${
               colors.text
             };">예산대</label>
-                <select id="budget-select" class="w-full lg:w-40 border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="${selectStyle}">
+                <select id="budget-select" class="w-full lg:w-40 border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="border-color: ${
+                  colors.primary
+                }55; background-color: ${colors.secondary};">
                     <option value="모두">-- 모든 예산 💰 --</option>${[
                       "낮음",
                       "중간",
@@ -2486,7 +2489,9 @@
             <div class="w-full lg:w-auto flex-grow"><label for="purpose-select" class="block text-sm font-bold text-gray-700 mb-1" style="color: ${
               colors.text
             };">여행 목적</label>
-                <select id="purpose-select" class="w-full lg:w-40 border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="${selectStyle}">
+                <select id="purpose-select" class="w-full lg:w-40 border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="border-color: ${
+                  colors.primary
+                }55; background-color: ${colors.secondary};">
                     <option value="모두">-- 모든 목적 🎯 --</option>${[
                       "휴양",
                       "관광",
@@ -2570,7 +2575,7 @@
   window.checkPassword = function () {
     const input = document.getElementById("password-input");
     const error = document.getElementById("password-error");
-    if (input.value === "3217") {
+    if (input.value === "0174") {
       closeModal();
       setView("guide");
     } else {
