@@ -1,0 +1,167 @@
+[
+  {
+    "name": "발리",
+    "country": "인도네시아",
+    "continent": "아시아",
+    "vibe": "럭셔리 휴양 & 힐링",
+    "budget": "중간(500만원 ~ 800만원)",
+    "travelType": "관광+휴양",
+    "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+    "goodMonths": [1, 2, 3, 11, 12],
+    "note": "해변과 리조트에서 휴식과 스파를 즐기세요."
+  },
+  {
+    "name": "롬복",
+    "country": "인도네시아",
+    "continent": "아시아",
+    "vibe": "프라이빗 휴양",
+    "budget": "중간(500만원 ~ 800만원)",
+    "travelType": "휴양",
+    "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+    "goodMonths": [1, 2, 3, 11, 12],
+    "note": "해변과 리조트에서 휴식과 스파를 즐기세요."
+  },
+  {
+    "name": "몰디브",
+    "country": "몰디브",
+    "continent": "아시아",
+    "vibe": "궁극의 럭셔리",
+    "budget": "매우 높음(1200만원 ~)",
+    "travelType": "휴양",
+    "bestMonths": [11, 12, 1, 2, 3],
+    "goodMonths": [4, 10],
+    "note": "스노클링·다이빙과 리조트 휴식, 선셋 크루즈를 추천합니다."
+  },
+  {
+    "name": "푸켓·카오락",
+    "country": "태국",
+    "continent": "아시아",
+    "vibe": "가성비 & 액티비티",
+    "budget": "낮음(~ 500만원)",
+    "travelType": "관광+휴양",
+    "bestMonths": [11, 12, 1, 2, 3],
+    "goodMonths": [4, 10],
+    "note": "해변과 리조트에서 휴식과 스파를 즐기세요."
+  },
+  {
+    "name": "코사무이",
+    "country": "태국",
+    "continent": "아시아",
+    "vibe": "고요한 휴양",
+    "budget": "중간(500만원 ~ 800만원)",
+    "travelType": "휴양",
+    "bestMonths": [2, 3, 4],
+    "goodMonths": [1, 5, 12],
+    "note": "해변과 리조트에서 휴식과 스파를 즐기세요."
+  },
+  {
+    "name": "방콕·치앙마이",
+    "country": "태국",
+    "continent": "아시아",
+    "vibe": "문화 & 미식",
+    "budget": "낮음(~ 500만원)",
+    "travelType": "관광+휴양",
+    "bestMonths": [11, 12, 1, 2],
+    "goodMonths": [3, 10],
+    "note": "전통 마을과 유적, 현지 마켓 방문을 추천합니다."
+  },
+  {
+    "name": "다낭·호이안",
+    "country": "베트남",
+    "continent": "아시아",
+    "vibe": "문화 & 비치",
+    "budget": "낮음(~ 500만원)",
+    "travelType": "관광+휴양",
+    "bestMonths": [2, 3, 4, 5, 6],
+    "goodMonths": [1, 7, 8, 9, 11],
+    "note": "전통 마을과 유적, 현지 마켓 방문을 추천합니다."
+  },
+  {
+    "name": "푸꾸옥",
+    "country": "베트남",
+    "continent": "아시아",
+    "vibe": "조용한 섬",
+    "budget": "중간(500만원 ~ 800만원)",
+    "travelType": "휴양",
+    "bestMonths": [11, 12, 1, 2, 3, 4],
+    "goodMonths": [5, 10],
+    "note": "해변과 리조트에서 휴식과 스파를 즐기세요."
+  },
+  {
+    "name": "나트랑",
+    "country": "베트남",
+    "continent": "아시아",
+    "vibe": "해양 스포츠",
+    "budget": "낮음(~ 500만원)",
+    "travelType": "관광+휴양",
+    "bestMonths": [1, 2, 3, 4, 5],
+    "goodMonths": [6, 11, 12],
+    "note": "스노클링·다이빙과 리조트 휴식, 선셋 크루즈를 추천합니다."
+  },
+  {
+    "name": "도쿄·교토",
+    "country": "일본",
+    "continent": "아시아",
+    "vibe": "전통 & 현대",
+    "budget": "높음(800만원 ~ 1200만원)",
+    "travelType": "관광",
+    "bestMonths": [3, 4, 5, 10, 11],
+    "goodMonths": [2, 6, 9, 12],
+    "note": "주요 명소와 미식을 즐기며 도시 산책을 추천합니다."
+  },
+  {
+    "name": "삿포로",
+    "country": "일본",
+    "continent": "아시아",
+    "vibe": "설국 로맨스",
+    "budget": "높음(800만원 ~ 1200만원)",
+    "travelType": "관광+휴양",
+    "bestMonths": [7, 8],
+    "goodMonths": [6, 9, 12, 1, 2],
+    "note": "해변과 리조트에서 휴식과 스파를 즐기세요."
+  },
+  {
+    "name": "오키나와",
+    "country": "일본",
+    "continent": "아시아",
+    "vibe": "열대 해양",
+    "budget": "중간(500만원 ~ 800만원)",
+    "travelType": "휴양",
+    "bestMonths": [4, 5, 10, 11],
+    "goodMonths": [3, 6, 12],
+    "note": "스노클링·다이빙과 리조트 휴식, 선셋 크루즈를 추천합니다."
+  },
+  {
+    "name": "홋카이도",
+    "country": "일본",
+    "continent": "아시아",
+    "vibe": "자연 & 온천",
+    "budget": "높음(800만원 ~ 1200만원)",
+    "travelType": "관광+휴양",
+    "bestMonths": [7, 8],
+    "goodMonths": [6, 9, 12, 1, 2],
+    "note": "온천과 스파로 피로를 풀고 로컬 음식도 즐겨보세요."
+  },
+  {
+    "name": "세부·보홀·보라카이",
+    "country": "필리핀",
+    "continent": "아시아",
+    "vibe": "해양 천국",
+    "budget": "중간(500만원 ~ 800만원)",
+    "travelType": "휴양",
+    "bestMonths": [12, 1, 2, 3, 4, 5],
+    "goodMonths": [11, 6],
+    "note": "스노클링·다이빙과 리조트 휴식, 선셋 크루즈를 추천합니다."
+  },
+  {
+    "name": "코타키나발루",
+    "country": "말레이시아",
+    "continent": "아시아",
+    "vibe": "자연 & 휴양",
+    "budget": "중간(500만원 ~ 800만원)",
+    "travelType": "관광+휴양",
+    "bestMonths": [3, 4, 5, 6, 7, 8],
+    "goodMonths": [2, 9, 10],
+    "note": "해변과 리조트에서 휴식과 스파를 즐기세요."
+  }
+]
