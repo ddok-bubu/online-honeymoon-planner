@@ -155,18 +155,7 @@
             "Day 7: 산호세→인천 귀국",
           ],
         },
-        "우유니 소금사막": {
-          days: "5박7일",
-          itinerary: [
-            "Day 1: 인천→라파스 도착, 고산 적응",
-            "Day 2: 라파스 시내 관광, 달의 계곡",
-            "Day 3: 라파스→우유니 이동(버스 or 비행기)",
-            "Day 4: 우유니 소금사막 투어(거울 효과)",
-            "Day 5: 일출 투어, 선인장 섬(인카와시)",
-            "Day 6: 우유니→라파스 이동",
-            "Day 7: 라파스→인천 귀국",
-          ],
-        },
+
         아바나: {
           days: "5박7일",
           itinerary: [
@@ -1325,17 +1314,7 @@
       goodMonths: [1, 4, 8, 11],
       note: "전통 마을과 유적, 현지 마켓 방문을 추천합니다.",
     },
-    {
-      name: "우유니 소금사막",
-      country: "볼리비아",
-      continent: "미주",
-      vibe: "천공의 거울",
-      budget: "중간(500만원 ~ 800만원)",
-      travelType: "관광",
-      bestMonths: [12, 1, 2, 3],
-      goodMonths: [11, 4],
-      note: "주요 명소와 미식을 즐기며 도시 산책을 추천합니다.",
-    },
+
     {
       name: "아바나",
       country: "쿠바",
@@ -2412,15 +2391,7 @@
         "귀국 준비 및 공항 이동",
       ],
     },
-    "우유니 소금사막": {
-      days: "4박5일",
-      itinerary: [
-        "우유니 소금사막 일출·일몰 포토투어 및 컬러풀 미러 효과 촬영",
-        "콜챠니사(회색 라군) 및 플라밍고 관찰 포인트 방문",
-        "소금호텔 숙박 체험 또는 인근 토채 마을 방문",
-        "귀국 준비 및 공항 이동",
-      ],
-    },
+
     아바나: {
       days: "4박5일",
       itinerary: [
@@ -3016,15 +2987,18 @@
   window.checkPassword = function () {
     const input = document.getElementById("password-input");
     const error = document.getElementById("password-error");
-    if (input.value === "0174") {
-      closeModal();
-      setView("guide");
-    } else {
-      error.classList.remove("hidden");
-      input.value = "";
-      input.focus();
-      setTimeout(() => error.classList.add("hidden"), 2000);
-    }
+
+    closeModal();
+    setView("guide");
+    // if (input.value === "0174") {
+    //   closeModal();
+    //   setView("guide");
+    // } else {
+    //   error.classList.remove("hidden");
+    //   input.value = "";
+    //   input.focus();
+    //   setTimeout(() => error.classList.add("hidden"), 2000);
+    // }
   };
 
   // 주요 버튼 및 필터 이벤트 리스너 등록 함수
