@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -40,7 +40,7 @@
           console.log(
             "Loaded itineraries.json, merged",
             Object.keys(data).length,
-            "entries"
+            "entries",
           );
         } catch (err) {
           console.error("Failed to load itineraries.json", err);
@@ -50,9 +50,25 @@
       // Load destinations metadata from external JSON and populate `destinationsData`
       (async () => {
         try {
-          const res = await fetch("data/destinations.json");
-          if (!res.ok) throw new Error(`HTTP ${res.status}`);
-          const dests = await res.json();
+          // try normalized data first, then fallback to original destinations.json
+          const candidateUrls = [
+            "data/destinations.normalized.json",
+            "data/destinations.json",
+          ];
+          let dests = null;
+          for (const u of candidateUrls) {
+            try {
+              const r = await fetch(u);
+              if (r.ok) {
+                dests = await r.json();
+                console.log("Loaded", u);
+                break;
+              }
+            } catch (e) {
+              // try next
+            }
+          }
+          if (!dests) throw new Error("Failed to load destinations JSON");
           // ensure a runtime global `destinationsData` exists
           try {
             if (typeof destinationsData === "undefined")
@@ -66,7 +82,7 @@
           window.dispatchEvent(new Event("destinations:loaded"));
           console.log(
             "Loaded destinations.json, entries",
-            Array.isArray(dests) ? dests.length : Object.keys(dests).length
+            Array.isArray(dests) ? dests.length : Object.keys(dests).length,
           );
         } catch (err) {
           console.error("Failed to load destinations.json", err);
@@ -89,7 +105,7 @@
           window.dispatchEvent(new Event("flighttimes:loaded"));
           console.log(
             "Loaded flight-times.json, entries",
-            Object.keys(ft).length
+            Object.keys(ft).length,
           );
         } catch (err) {
           console.error("Failed to load flight-times.json", err);
@@ -215,13 +231,13 @@
   }
 
   // 비행시간(분)을 카테고리로 변환하는 함수
-  // 단거리: 4시간 이하 (<=240분), 중거리: 4~8시간 (240~480분),
-  // 장거리: 8~14시간 (480~840분), 울트라 장거리: 14시간 이상 (>=840분)
+  // 단거리: 4시간 이하 (<=240분), 중거리: 4~7시간 (240~420분),
+  // 장거리: 7~12시간 (420~720분), 울트라 장거리: 12시간 초과 (>720분)
   function parseFlightTimeCategory(flightTimeStr) {
     const minutes = parseFlightTimeToMinutes(flightTimeStr);
     if (minutes <= 240) return "단거리";
-    if (minutes <= 480) return "중거리";
-    if (minutes <= 840) return "장거리";
+    if (minutes <= 420) return "중거리";
+    if (minutes <= 720) return "장거리";
     return "울트라 장거리";
   }
 
@@ -289,7 +305,12 @@
   let selectedBudget = "모두";
   let selectedPurpose = "모두";
   let selectedFlightTime = "모두";
+  // 전체검색 쿼리
+  let searchQuery = "";
   let isFiltered = false;
+
+  // 디바운스 제거: 입력 시에는 검색어만 업데이트하고,
+  // 실제 필터링(전체검색)은 '여행지 검색' 버튼 클릭 시 실행됩니다.
 
   // 바디 스크롤 잠금 상태를 관리 (모달 오픈 시 배경 스크롤 방지)
   let _previousBodyOverflow = null;
@@ -1304,7 +1325,7 @@
         <div class="map-container">
           <iframe width="100%" height="100%" frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(
-              mapQuery
+              mapQuery,
             )}&zoom=${zoom}"
             allowfullscreen></iframe>
         </div>
@@ -1350,7 +1371,7 @@
                     </div>
                     <p class="text-sm text-gray-700 pt-1">${item}</p>
                   </div>
-              `
+              `,
                 )
                 .join("")}
             </div>
@@ -1427,7 +1448,7 @@
       desc: `${title}는 ${dest.name} 여행에 유용한 아이템입니다. 상세 구매 페이지에서 옵션을 확인하세요.`,
       img: `https://via.placeholder.com/160?text=${encodeURIComponent(title)}`,
       url: `https://www.example.com/search?q=${encodeURIComponent(
-        dest.name + " " + title
+        dest.name + " " + title,
       )}`,
     }));
   }
@@ -1449,7 +1470,7 @@
             </button>
           </div>
           <div class="modal-body p-6">
-            <p class="text-sm text-gray-600 mb-4">여행지 특성에 맞춘 추천 아이템입니다. 클릭하면 구매 페이지(샘플)로 이동합니다.</p>
+            <p class="text-sm text-gray-600 mb-4">여행지 특성에 맞춘 추천 아이템입니다. 클릭하면 구매 페이지로 이동합니다.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               ${items
                 .map(
@@ -1462,7 +1483,7 @@
                     <div class="text-xs text-gray-400 mt-2">구매/상세보기</div>
                   </div>
                 </a>
-              `
+              `,
                 )
                 .join("")}
             </div>
@@ -1541,10 +1562,10 @@
               <p class="text-lg md:text-2xl font-medium" style="color: ${
                 colors.primary
               };">${
-      currentView === "intro"
-        ? "두 분만을 위한 완벽한 여행지를 찾아보세요!✈️"
-        : "여행지 필터링 및 추천 가이드 🗺️"
-    }</p>
+                currentView === "intro"
+                  ? "두 분만을 위한 완벽한 여행지를 찾아보세요!✈️"
+                  : "여행지 필터링 및 추천 가이드 🗺️"
+              }</p>
           </header>`;
   }
 
@@ -1571,19 +1592,19 @@
       isBest ? "border-4" : "border-gray-50"
     }" onclick="showMapModal(${JSON.stringify(dest).replace(
       /"/g,
-      "&quot;"
+      "&quot;",
     )})" style="${isBest ? "border-color: " + colors.primary : ""};">
               <div class="p-6 pb-4 border-b border-gray-100 ${
                 isBest ? "bg-best/10" : ""
               }" style="${
-      isBest ? "background-color: " + colors.primary + "1A" : ""
-    };">
+                isBest ? "background-color: " + colors.primary + "1A" : ""
+              };">
                   <h2 class="text-3xl font-black text-gray-900 mb-1 flex items-center">
                       <img src="https://flagcdn.com/w40/${getCountryCode(
-                        dest.country
+                        dest.country,
                       )}.png" alt="${
-      dest.country
-    } 국기" class="w-8 h-6 mr-3 rounded shadow-sm" onerror="this.style.display='none'">
+                        dest.country
+                      } 국기" class="w-8 h-6 mr-3 rounded shadow-sm" onerror="this.style.display='none'">
                       <span>${dest.name}</span>
                   </h2>
                   <span class="ml-9 text-base font-normal text-gray-500">${
@@ -1597,19 +1618,19 @@
                       <div><p class="text-sm font-semibold text-gray-700">여행 분위기</p><p class="text-base text-gray-900 font-medium">${
                         dest.vibe
                       } <span class='text-sm italic'>(${
-      dest.travelType
-    })</span></p></div>
+                        dest.travelType
+                      })</span></p></div>
                   </div>
                   <div class="flex items-start"><i data-lucide="wallet" class="w-5 h-5 flex-shrink-0 mt-1 mr-3 fill-current" style="color: ${
                     colors.accent
                   }; fill: ${colors.accent};"></i>
                       <div><p class="text-sm font-semibold text-gray-700">예상 예산대 (7일/2인 기준)</p><p class="text-lg font-extrabold" style="color: ${budgetColor};">${
-      dest.budget
-    } <span class="text-xs text-gray-500">(항공, 숙소, 식비 포함 추정치)</span></p></div>
+                        dest.budget
+                      } <span class="text-xs text-gray-500">(항공, 숙소, 식비 포함 추정치)</span></p></div>
                   </div>
                   <div class="flex items-start border-t pt-4 border-gray-100"><i data-lucide="message-square" class="w-5 h-5 text-gray-500 flex-shrink-0 mt-1 mr-3"></i>
                       <div><p class="text-sm font-semibold text-gray-700">똑딱부부 Tip</p><p class="text-sm text-gray-600 italic">${generateNoteFor(
-                        dest
+                        dest,
                       )}</p></div>
                   </div>
               </div>
@@ -1617,8 +1638,8 @@
                   <p class="text-xs font-medium text-gray-500 mb-1"><span class="font-bold" style="color: ${
                     colors.primary
                   };">BEST</span> & <span class="font-bold" style="color: ${
-      colors.good
-    };">GOOD</span> 시즌:</p>
+                    colors.good
+                  };">GOOD</span> 시즌:</p>
                   <div class="flex flex-wrap gap-2">
                       ${[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
                         .map((m) => {
@@ -1638,14 +1659,14 @@
           <p class="text-xs text-gray-500 mt-2">※ <span class="font-bold" style="color: ${
             colors.primary
           };">BEST</span>: 성수기 · <span class="font-bold" style="color: ${
-      colors.good
-    };">GOOD</span>: 중간기</p>
+            colors.good
+          };">GOOD</span>: 중간기</p>
                   <div class="mt-4">
                       <button onclick="event.stopPropagation(); showPackingModal(${JSON.stringify(
-                        dest
+                        dest,
                       ).replace(
                         /\"/g,
-                        "&quot;"
+                        "&quot;",
                       )})" class="packing-cta-btn w-full">추천 여행템</button>
                   </div>
               </div>
@@ -1677,12 +1698,22 @@
           selectedFlightTime === "모두" ||
           (selectedFlightTime &&
             dest.flightTimeCategory === selectedFlightTime);
+
+        // 전체검색 쿼리 매칭 (이름, 국가, 분위기, 노트)
+        const q = (searchQuery || "").trim().toLowerCase();
+        const searchMatch =
+          !q ||
+          [dest.name, dest.country, dest.vibe, dest.note].some(
+            (s) => s && s.toString().toLowerCase().includes(q),
+          );
+
         return (
           monthMatch &&
           continentMatch &&
           budgetMatch &&
           purposeMatch &&
-          flightTimeMatch
+          flightTimeMatch &&
+          searchMatch
         );
       });
       // BEST 시즌 우선 정렬
@@ -1693,8 +1724,8 @@
           return isABest && !isBBest
             ? -1
             : !isABest && isBBest
-            ? 1
-            : a.name.localeCompare(b.name, "ko");
+              ? 1
+              : a.name.localeCompare(b.name, "ko");
         });
       return list;
     };
@@ -1702,15 +1733,18 @@
     let content = !isFiltered
       ? `<div class="col-span-full text-center text-gray-500 p-12 bg-white rounded-2xl shadow-inner border-dashed border-2 border-gray-200"><i data-lucide="globe" class='w-12 h-12 mx-auto mb-4' style='color: ${colors.info};'></i><p class="text-xl font-semibold mb-2" style="color: ${colors.text};">필터를 선택하고 '여행지 검색' 버튼을 눌러보세요!</p><p class="text-gray-500">두 분이 꿈꾸는 완벽한 여행지를 찾아드립니다 ✨</p></div>`
       : filteredDestinations.length === 0
-      ? `<div class="col-span-full text-center p-12 bg-white rounded-2xl shadow-inner border-dashed border-2" style="border-color: ${colors.primary}80;"><i data-lucide="cloud-off" class='w-12 h-12 mx-auto mb-4' style='color: ${colors.primary};'></i><p class="text-xl font-semibold mb-2" style="color: ${colors.primary};">😭 아쉽게도 해당 조건에 맞는 추천 여행지가 없습니다.</p><p class="text-gray-600">다른 달이나 대륙을 선택하여 로맨틱한 여행지를 다시 찾아보세요!</p></div>`
-      : filteredDestinations.map(renderDestinationCard).join("");
+        ? `<div class="col-span-full text-center p-12 bg-white rounded-2xl shadow-inner border-dashed border-2" style="border-color: ${colors.primary}80;"><i data-lucide="cloud-off" class='w-12 h-12 mx-auto mb-4' style='color: ${colors.primary};'></i><p class="text-xl font-semibold mb-2" style="color: ${colors.primary};">😭 아쉽게도 해당 조건에 맞는 추천 여행지가 없습니다.</p><p class="text-gray-600">다른 달이나 대륙을 선택하여 로맨틱한 여행지를 다시 찾아보세요!</p></div>`
+        : filteredDestinations.map(renderDestinationCard).join("");
     return `<div id="filter-bar" class="bg-white p-6 rounded-2xl shadow-xl mb-10 flex flex-col gap-4 border-b-4" style="border-color: ${
       colors.primary
     }AA;">
               <div class="w-full flex flex-col lg:flex-row gap-4 items-stretch lg:items-center justify-between">
+              <div class="w-full lg:w-auto flex-grow"><label for="search-input" class="block text-sm font-bold text-gray-700 mb-1" style="color: ${colors.text};">전체검색</label>
+                  <input id="search-input" type="search" autocomplete="off" placeholder="예: 발리, 몰디브" value="${searchQuery || ""}" class="w-full lg:w-45 custom-arrow border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="border-color: ${colors.primary}55; background-color: ${colors.secondary};" />
+              </div>
               <div class="w-full lg:w-auto flex-grow"><label for="month-select" class="block text-sm font-bold text-gray-700 mb-1" style="color: ${
                 colors.text
-              };">여행 희망 달</label>
+              }">여행 희망 달</label>
                   <select id="month-select" class="w-full lg:w-45 custom-arrow border-2 rounded-xl p-3 transition duration-150 ease-in-out bg-secondary text-gray-800 shadow-sm focus:ring-2 focus:ring-accent" style="border-color: ${
                     colors.primary
                   }55; background-color: ${colors.secondary};">
@@ -1721,7 +1755,7 @@
                           (i) =>
                             `<option value="${i + 1}" ${
                               selectedMonth === i + 1 ? "selected" : ""
-                            }>${i + 1}월</option>`
+                            }>${i + 1}월</option>`,
                         )
                         .join("")}
                   </select>
@@ -1743,7 +1777,7 @@
                           (c) =>
                             `<option value="${c}" ${
                               selectedContinent === c ? "selected" : ""
-                            }>${c}</option>`
+                            }>${c}</option>`,
                         )
                         .join("")}
                   </select>
@@ -1764,7 +1798,7 @@
                           (b) =>
                             `<option value="${b}" ${
                               selectedBudget === b ? "selected" : ""
-                            }>${b}</option>`
+                            }>${b}</option>`,
                         )
                         .join("")}
                   </select>
@@ -1784,7 +1818,7 @@
                           (p) =>
                             `<option value="${p}" ${
                               selectedPurpose === p ? "selected" : ""
-                            }>${p}</option>`
+                            }>${p}</option>`,
                         )
                         .join("")}
                   </select>
@@ -1805,7 +1839,7 @@
                           (f) =>
                             `<option value="${f}" ${
                               selectedFlightTime === f ? "selected" : ""
-                            }>${f}</option>`
+                            }>${f}</option>`,
                         )
                         .join("")}
                   </select>
@@ -1824,6 +1858,8 @@
 
   // 여행지 검색 버튼 클릭 시 필터 적용 함수
   function handleSearch() {
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) searchQuery = searchInput.value || "";
     isFiltered = true;
     renderApp();
   }
@@ -1917,6 +1953,22 @@
       if (budgetSelect) budgetSelect.onchange = handleFilterChange;
       if (purposeSelect) purposeSelect.onchange = handleFilterChange;
       if (flighttimeSelect) flighttimeSelect.onchange = handleFilterChange;
+      const searchInput = document.getElementById("search-input");
+      if (searchInput) {
+        // 입력 시에는 검색어만 업데이트합니다. 실제 필터링은 버튼 클릭 시 수행됩니다.
+        searchInput.oninput = (e) => {
+          searchQuery = e.target.value || "";
+        };
+        // Enter 키로도 검색 버튼이 작동하도록 처리
+        searchInput.onkeydown = (e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            // 최신 입력값을 반영하고 검색 실행
+            searchQuery = e.target.value || "";
+            handleSearch();
+          }
+        };
+      }
     }
   }
 

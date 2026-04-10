@@ -8,7 +8,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [4, 5, 6, 7, 8, 9, 10],
     "goodMonths": [1, 2, 3, 11, 12],
-    "note": "건기인 4월~10월이 최적기. 우붓의 논 뷰 리조트와 스미냑의 비치 클럽 추천."
+    "note": "건기인 4월~10월이 최적기. 우붓의 논 뷰 리조트와 스미냑의 비치 클럽 추천.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 7.2,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "롬복",
@@ -19,7 +23,11 @@
     "travelType": "휴양",
     "bestMonths": [4, 5, 6, 7, 8, 9, 10],
     "goodMonths": [1, 2, 3, 11, 12],
-    "note": "길리 섬에서의 스노클링 및 다이빙 명소. 발리보다 조용하고 프라이빗함."
+    "note": "길리 섬에서의 스노클링 및 다이빙 명소. 발리보다 조용하고 프라이빗함.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 7.2,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "몰디브",
@@ -30,7 +38,11 @@
     "travelType": "휴양",
     "bestMonths": [11, 12, 1, 2, 3],
     "goodMonths": [4, 10],
-    "note": "워터 빌라에서의 로맨틱한 경험. 섬마다 리조트 분위기가 다름."
+    "note": "워터 빌라에서의 로맨틱한 경험. 섬마다 리조트 분위기가 다름.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 9.5,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "푸켓·카오락",
@@ -41,7 +53,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [11, 12, 1, 2, 3],
     "goodMonths": [4, 10],
-    "note": "겨울철 건기가 가장 좋음. 빠통, 카론 등 지역별 특색 확인. 피피섬 투어 필수."
+    "note": "겨울철 건기가 가장 좋음. 빠통, 카론 등 지역별 특색 확인. 피피섬 투어 필수.",
+    "budgetCategory": "낮음",
+    "budgetRange": "~ 500만원",
+    "flightTimeHours": 5.8,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "코사무이",
@@ -52,7 +68,11 @@
     "travelType": "휴양",
     "bestMonths": [2, 3, 4],
     "goodMonths": [1, 5, 12],
-    "note": "타이만의 아름다운 섬. 건기가 짧고 우기가 비교적 덜 심함."
+    "note": "타이만의 아름다운 섬. 건기가 짧고 우기가 비교적 덜 심함.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 5.8,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "방콕·치앙마이",
@@ -63,7 +83,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [11, 12, 1, 2],
     "goodMonths": [3, 10],
-    "note": "북부(치앙마이)와 수도(방콕)를 잇는 문화 체험 중심의 여행."
+    "note": "북부(치앙마이)와 수도(방콕)를 잇는 문화 체험 중심의 여행.",
+    "budgetCategory": "낮음",
+    "budgetRange": "~ 500만원",
+    "flightTimeHours": 5.8,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "다낭·호이안",
@@ -74,7 +98,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [2, 3, 4, 5, 6],
     "goodMonths": [1, 7, 8, 9, 11],
-    "note": "베트남 중부 최대의 해변 도시와 유네스코 세계문화유산 호이안의 조화"
+    "note": "베트남 중부 최대의 해변 도시와 유네스코 세계문화유산 호이안의 조화",
+    "budgetCategory": "낮음",
+    "budgetRange": "~ 500만원",
+    "flightTimeHours": 4.5,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "푸꾸옥",
@@ -85,7 +113,11 @@
     "travelType": "휴양",
     "bestMonths": [11, 12, 1, 2, 3, 4],
     "goodMonths": [5, 10],
-    "note": "베트남 최남단의 열대 섬. 아름다운 선셋과 프라이빗 리조트"
+    "note": "베트남 최남단의 열대 섬. 아름다운 선셋과 프라이빗 리조트",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 4.5,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "나트랑",
@@ -96,7 +128,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [1, 2, 3, 4, 5],
     "goodMonths": [6, 11, 12],
-    "note": "베트남의 대표적인 해양 휴양지. 스노클링과 머드 스파가 유명"
+    "note": "베트남의 대표적인 해양 휴양지. 스노클링과 머드 스파가 유명",
+    "budgetCategory": "낮음",
+    "budgetRange": "~ 500만원",
+    "flightTimeHours": 4.5,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "도쿄·교토",
@@ -107,7 +143,11 @@
     "travelType": "관광",
     "bestMonths": [3, 4, 5, 10, 11],
     "goodMonths": [2, 6, 9, 12],
-    "note": "일본의 수도와 고도(古都)를 잇는 문화 여행. 벚꽃(3~4월)과 단풍(11월) 시즌 추천"
+    "note": "일본의 수도와 고도(古都)를 잇는 문화 여행. 벚꽃(3~4월)과 단풍(11월) 시즌 추천",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 1.8,
+    "flightTimeCategory": "단거리"
   },
   {
     "name": "삿포로",
@@ -118,7 +158,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [7, 8],
     "goodMonths": [6, 9, 12, 1, 2],
-    "note": "여름은 시원하고 쾌적. 겨울은 눈 축제와 스키 명소"
+    "note": "여름은 시원하고 쾌적. 겨울은 눈 축제와 스키 명소",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 1.8,
+    "flightTimeCategory": "단거리"
   },
   {
     "name": "오키나와",
@@ -129,7 +173,11 @@
     "travelType": "휴양",
     "bestMonths": [4, 5, 10, 11],
     "goodMonths": [3, 6, 12],
-    "note": "일본 최남단의 열대 섬. 에메랄드빛 바다와 산호초"
+    "note": "일본 최남단의 열대 섬. 에메랄드빛 바다와 산호초",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 1.8,
+    "flightTimeCategory": "단거리"
   },
   {
     "name": "홋카이도",
@@ -140,7 +188,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [7, 8],
     "goodMonths": [6, 9, 12, 1, 2],
-    "note": "광활한 자연과 온천. 여름은 라벤더, 겨울은 설경과 스키"
+    "note": "광활한 자연과 온천. 여름은 라벤더, 겨울은 설경과 스키",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 1.8,
+    "flightTimeCategory": "단거리"
   },
   {
     "name": "세부·보홀·보라카이",
@@ -151,7 +203,11 @@
     "travelType": "휴양",
     "bestMonths": [12, 1, 2, 3, 4, 5],
     "goodMonths": [11, 6],
-    "note": "필리핀의 대표적인 해양 휴양지. 세부는 다이빙, 보홀은 자연, 보라카이는 화이트비치가 유명"
+    "note": "필리핀의 대표적인 해양 휴양지. 세부는 다이빙, 보홀은 자연, 보라카이는 화이트비치가 유명",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 3.8,
+    "flightTimeCategory": "단거리"
   },
   {
     "name": "코타키나발루",
@@ -162,7 +218,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [3, 4, 5, 6, 7, 8],
     "goodMonths": [2, 9, 10],
-    "note": "보르네오 섬의 관문. 키나발루 산과 석양이 아름다운 해변"
+    "note": "보르네오 섬의 관문. 키나발루 산과 석양이 아름다운 해변",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 6.7,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "랑카위",
@@ -173,7 +233,11 @@
     "travelType": "휴양",
     "bestMonths": [12, 1, 2, 3],
     "goodMonths": [11, 4],
-    "note": "말레이시아 최북단의 면세 섬. 케이블카와 스카이브리지가 유명"
+    "note": "말레이시아 최북단의 면세 섬. 케이블카와 스카이브리지가 유명",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 6.7,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "두바이·아부다비",
@@ -184,7 +248,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [11, 12, 1, 2, 3],
     "goodMonths": [4, 10],
-    "note": "사막 사파리와 쇼핑."
+    "note": "겨울이 가장 쾌적하며 사막 사파리는 일몰 시간대 추천. 두바이는 쇼핑과 전망대, 아부다비는 그랜드 모스크 방문 필수.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 9.3,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "이스탄불",
@@ -195,7 +263,11 @@
     "travelType": "관광",
     "bestMonths": [4, 5, 9, 10],
     "goodMonths": [3, 6, 11],
-    "note": "모스크와 바자르."
+    "note": "유럽과 아시아를 잇는 도시로 모스크 방문 시 복장 규정 주의. 그랜드 바자르와 보스포루스 해협 크루즈 추천.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 11,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "싱가포르",
@@ -206,7 +278,11 @@
     "travelType": "관광",
     "bestMonths": [2, 3, 4, 7, 8],
     "goodMonths": [1, 5, 6, 9, 10, 11, 12],
-    "note": "도시국가의 완벽한 인프라. 마리나베이샌즈와 가든스바이더베이 필수 코스"
+    "note": "도시국가의 완벽한 인프라. 마리나베이샌즈와 가든스바이더베이 필수 코스",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 6.5,
+    "flightTimeCategory": "중거리"
   },
   {
     "name": "시드니",
@@ -217,7 +293,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [12, 1, 2],
     "goodMonths": [3, 11],
-    "note": "남반구 여름 최적."
+    "note": "남반구라 계절이 반대. 본다이 비치와 오페라하우스는 필수 코스이며 자외선이 강해 선크림 필수.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 9.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "타히티",
@@ -228,7 +308,11 @@
     "travelType": "휴양",
     "bestMonths": [5, 6, 7, 8, 9, 10],
     "goodMonths": [4, 11],
-    "note": "오버워터 방갈로."
+    "note": "보라보라 등 섬 이동이 많아 일정 여유 필요. 오버워터 방갈로는 최소 2박 이상 추천.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 14.7,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "뉴질랜드",
@@ -239,7 +323,11 @@
     "travelType": "액티비티",
     "bestMonths": [1, 2, 3],
     "goodMonths": [12, 4],
-    "note": "퀸스타운 번지점프."
+    "note": "남섬 중심 여행이 인기. 렌터카 이동이 일반적이며 날씨 변화가 심해 일정 유연하게 잡는 것이 중요.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 11.5,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "피지",
@@ -250,7 +338,11 @@
     "travelType": "휴양",
     "bestMonths": [5, 6, 7, 8, 9, 10],
     "goodMonths": [4, 11],
-    "note": "남태평양의 보석."
+    "note": "리조트별로 분위기 차이가 크며 올인클루시브 선택이 편함. 섬 간 이동은 보트나 경비행기 이용.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 11.3,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "뉴칼레도니아·바누아투",
@@ -261,7 +353,11 @@
     "travelType": "휴양",
     "bestMonths": [9, 10, 11],
     "goodMonths": [4, 5, 8],
-    "note": "원시적 자연."
+    "note": "자연 보존이 잘 되어 있어 액티비티 중심 여행에 적합. 물가와 이동 비용이 높은 편.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "파리·노르망디",
@@ -272,7 +368,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 9, 10],
     "goodMonths": [4, 7],
-    "note": "에펠탑, 루브르."
+    "note": "파리는 소매치기 주의. 노르망디는 렌터카 이동이 편하며 몽생미셸은 조수 시간 확인 필수.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 11.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "프로방스·니스",
@@ -283,7 +383,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [5, 6, 7, 8, 9],
     "goodMonths": [4, 10],
-    "note": "프로방스와 코트다쥐르."
+    "note": "프로방스와 코트다쥐르.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 11.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "베네치아·밀라노",
@@ -294,7 +398,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 9, 10],
     "goodMonths": [4, 7],
-    "note": "베네치아, 밀라노."
+    "note": "베네치아, 밀라노.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.2,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "로마·피렌체",
@@ -305,7 +413,11 @@
     "travelType": "관광",
     "bestMonths": [4, 5, 6, 9, 10],
     "goodMonths": [3, 11],
-    "note": "로마, 피렌체."
+    "note": "로마, 피렌체.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.2,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "아말피",
@@ -316,7 +428,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [5, 6, 7, 8, 9],
     "goodMonths": [4, 10],
-    "note": "아말피 해안."
+    "note": "아말피 해안.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.2,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "취리히·루체른",
@@ -327,7 +443,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [6, 7, 8, 9],
     "goodMonths": [5, 10],
-    "note": "산악 열차 코스."
+    "note": "산악 열차 코스.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 12,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "인터라켄·체르마트",
@@ -338,7 +458,11 @@
     "travelType": "액티비티",
     "bestMonths": [12, 1, 2, 3],
     "goodMonths": [6, 7, 8],
-    "note": "스키 천국."
+    "note": "스키 천국.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 12,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "바르셀로나",
@@ -349,7 +473,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 9, 10],
     "goodMonths": [4, 7, 8],
-    "note": "바르셀로나 가우디."
+    "note": "바르셀로나 가우디.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "마드리드",
@@ -360,7 +488,11 @@
     "travelType": "관광",
     "bestMonths": [4, 5, 6, 9, 10],
     "goodMonths": [3, 11],
-    "note": "마드리드 플라멩코."
+    "note": "마드리드 플라멩코.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "세비야·그라나다",
@@ -371,7 +503,11 @@
     "travelType": "관광",
     "bestMonths": [4, 5, 6, 9, 10],
     "goodMonths": [3, 11],
-    "note": "세비야 그라나다."
+    "note": "세비야 그라나다.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "카나리아 제도",
@@ -382,7 +518,11 @@
     "travelType": "휴양",
     "bestMonths": [1, 2, 3, 4, 5, 11, 12],
     "goodMonths": [6, 10],
-    "note": "연중 온화한 기후."
+    "note": "연중 온화한 기후.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "포르투",
@@ -393,7 +533,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 9, 10],
     "goodMonths": [4, 7],
-    "note": "포르투 와인 투어."
+    "note": "포르투 와인 투어.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 13.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "리스본·알가르베",
@@ -404,7 +548,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [4, 5, 6, 9, 10],
     "goodMonths": [3, 11],
-    "note": "리스본 알가르브."
+    "note": "리스본 알가르브.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 13.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "마데이라 제도",
@@ -415,7 +563,11 @@
     "travelType": "휴양",
     "bestMonths": [4, 5, 6, 9, 10],
     "goodMonths": [3, 7, 11],
-    "note": "대서양의 진주."
+    "note": "대서양의 진주.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 13.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "베를린·함부르크",
@@ -426,7 +578,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 7, 8, 9],
     "goodMonths": [4, 10],
-    "note": "노이슈반슈타인."
+    "note": "베를린은 역사 유적 중심, 함부르크는 항구 도시 분위기. 독일은 교통 패스 활용이 효율적.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 11.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "뮌헨·알프스",
@@ -437,7 +593,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8, 9],
     "goodMonths": [5, 10],
-    "note": "뮌헨 남부 알프스."
+    "note": "뮌헨 남부 알프스.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 11.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "오슬로·베르겐",
@@ -448,7 +608,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 7, 8],
     "goodMonths": [9],
-    "note": "송네 피오르."
+    "note": "송네 피오르.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 12.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "트론헤임",
@@ -459,7 +623,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "베르겐 중부."
+    "note": "베르겐 중부.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 12.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "트롬쇠",
@@ -470,7 +638,11 @@
     "travelType": "액티비티",
     "bestMonths": [12, 1, 2, 6, 7],
     "goodMonths": [3, 5, 8],
-    "note": "백야와 오로라."
+    "note": "백야와 오로라.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 12.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "헬싱키",
@@ -481,7 +653,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "헬싱키 호수."
+    "note": "헬싱키 호수.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 10.2,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "탐페레",
@@ -492,7 +668,11 @@
     "travelType": "휴양",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "중부 숲과 호수."
+    "note": "중부 숲과 호수.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 10.2,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "로바니에미",
@@ -503,7 +683,11 @@
     "travelType": "액티비티",
     "bestMonths": [12, 1, 2, 3],
     "goodMonths": [6, 7, 8],
-    "note": "라플란드 오로라."
+    "note": "라플란드 오로라.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 10.2,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "스톡홀름·예테보리",
@@ -514,7 +698,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "스톡홀름."
+    "note": "스톡홀름.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 11.5,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "키루나",
@@ -525,7 +713,11 @@
     "travelType": "액티비티",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "북부 백야."
+    "note": "북부 백야.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 11.5,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "그리스",
@@ -536,7 +728,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [5, 6, 9],
     "goodMonths": [4, 7, 8, 10],
-    "note": "산토리니 일몰."
+    "note": "산토리니 일몰.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 11.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "영국",
@@ -547,7 +743,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "런던 박물관."
+    "note": "런던 박물관.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 12,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "체코",
@@ -558,7 +758,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 9],
     "goodMonths": [4, 7, 8, 10],
-    "note": "프라하 구시가."
+    "note": "프라하 구시가.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 11.7,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "크로아티아",
@@ -569,7 +773,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [6, 9],
     "goodMonths": [5, 7, 8, 10],
-    "note": "두브로브니크."
+    "note": "두브로브니크.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "슬로베니아",
@@ -580,7 +788,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "블레드 호수."
+    "note": "블레드 호수.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "덴마크",
@@ -591,7 +803,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "코펜하겐."
+    "note": "코펜하겐.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 11.5,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "샌프란시스코·LA",
@@ -602,7 +818,11 @@
     "travelType": "관광",
     "bestMonths": [4, 5, 6, 9, 10],
     "goodMonths": [3, 7, 8],
-    "note": "SF, LA, 그랜드캐니언."
+    "note": "도시간 이동 거리가 길어 국내선 항공 추천. LA는 렌터카 필수, 샌프란시스코는 대중교통 이용 가능.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 10.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "뉴욕·보스턴",
@@ -613,7 +833,11 @@
     "travelType": "관광",
     "bestMonths": [4, 5, 6, 9, 10],
     "goodMonths": [3, 11],
-    "note": "뉴욕 보스턴."
+    "note": "뉴욕은 도보+지하철 이동 중심, 보스턴은 당일치기 가능. 뮤지컬과 박물관 사전 예약 추천.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 10.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "하와이",
@@ -624,7 +848,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [4, 5, 9, 10],
     "goodMonths": [3, 6, 11],
-    "note": "오아후 빅아일랜드."
+    "note": "오아후 빅아일랜드.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 10.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "괌·사이판",
@@ -635,7 +863,11 @@
     "travelType": "휴양",
     "bestMonths": [12, 1, 2, 3, 4],
     "goodMonths": [5, 11],
-    "note": "미국령 열대."
+    "note": "미국령 열대.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 10.8,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "밴쿠버·토론토",
@@ -646,7 +878,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8, 9],
     "goodMonths": [5, 10],
-    "note": "밴쿠버 토론토."
+    "note": "밴쿠버 토론토.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 10.7,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "캘거리·에드먼턴",
@@ -657,7 +893,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "중부 자연."
+    "note": "중부 자연.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 10.7,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "칸쿤",
@@ -668,7 +908,11 @@
     "travelType": "휴양",
     "bestMonths": [12, 1, 2, 3, 4],
     "goodMonths": [5, 11],
-    "note": "카리브 바다."
+    "note": "카리브 바다.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 13.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "칠레",
@@ -679,7 +923,11 @@
     "travelType": "액티비티",
     "bestMonths": [12, 1, 2, 3],
     "goodMonths": [11, 4],
-    "note": "파타고니아."
+    "note": "파타고니아.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 24,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "페루",
@@ -690,7 +938,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 7, 8, 9],
     "goodMonths": [4, 10],
-    "note": "마추픽추."
+    "note": "마추픽추.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 23,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "바하마",
@@ -701,7 +953,11 @@
     "travelType": "휴양",
     "bestMonths": [12, 1, 2, 3, 4],
     "goodMonths": [5, 11],
-    "note": "핑크샌드 비치."
+    "note": "핑크샌드 비치.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 15.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "브라질",
@@ -712,7 +968,11 @@
     "travelType": "관광",
     "bestMonths": [12, 1, 2, 3],
     "goodMonths": [11, 4],
-    "note": "리우 아마존."
+    "note": "리우 아마존.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 25,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "아르헨티나",
@@ -723,7 +983,11 @@
     "travelType": "관광",
     "bestMonths": [12, 1, 2, 3],
     "goodMonths": [11, 4],
-    "note": "탱고 빙하."
+    "note": "부에노스아이레스와 파타고니아는 거리가 멀어 항공 이동 필수. 환율 변동 확인 중요.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 26,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "세렝게티",
@@ -734,7 +998,11 @@
     "travelType": "액티비티",
     "bestMonths": [6, 7, 8, 9, 10],
     "goodMonths": [1, 2],
-    "note": "야생동물 사파리."
+    "note": "야생동물 사파리.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 14.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "잔지바르",
@@ -745,7 +1013,11 @@
     "travelType": "휴양",
     "bestMonths": [6, 7, 8, 9, 10],
     "goodMonths": [1, 2, 12],
-    "note": "동부 해안 섬."
+    "note": "동부 해안 섬.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 14.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "나이로비",
@@ -756,7 +1028,11 @@
     "travelType": "액티비티",
     "bestMonths": [1, 2, 6, 7, 8, 9, 10],
     "goodMonths": [12],
-    "note": "마사이마라."
+    "note": "마사이마라.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": 13.7,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "카사블랑카",
@@ -767,7 +1043,11 @@
     "travelType": "관광",
     "bestMonths": [3, 4, 5, 10, 11],
     "goodMonths": [2, 9, 12],
-    "note": "이슬람 문화."
+    "note": "카사블랑카는 관문 도시로, 마라케시나 페스와 함께 이동하는 일정이 일반적.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 14.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "마라케시",
@@ -778,7 +1058,11 @@
     "travelType": "관광",
     "bestMonths": [3, 4, 5, 10, 11],
     "goodMonths": [2, 9],
-    "note": "사하라 투어."
+    "note": "메디나에서 길 잃기 쉬움. 사하라 사막 투어는 1박2일 또는 2박3일 일정 추천.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 14.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "카이로",
@@ -789,7 +1073,11 @@
     "travelType": "관광",
     "bestMonths": [10, 11, 12, 1, 2, 3],
     "goodMonths": [4, 9],
-    "note": "피라미드."
+    "note": "피라미드는 오전 방문이 덜 덥고 혼잡도 낮음. 현지 가이드 동행이 편리.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.3,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "아스완·룩소르",
@@ -800,7 +1088,11 @@
     "travelType": "관광",
     "bestMonths": [10, 11, 12, 1, 2, 3],
     "goodMonths": [4, 9],
-    "note": "나일강 크루즈."
+    "note": "나일강 크루즈.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.3,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "후루가다",
@@ -811,7 +1103,11 @@
     "travelType": "휴양",
     "bestMonths": [10, 11, 12, 1, 2, 3, 4],
     "goodMonths": [5, 9],
-    "note": "홍해 다이빙."
+    "note": "홍해 다이빙.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 1000만원",
+    "flightTimeHours": 12.3,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "모리셔스",
@@ -822,7 +1118,11 @@
     "travelType": "휴양",
     "bestMonths": [5, 6, 7, 8, 9, 10, 11],
     "goodMonths": [4, 12],
-    "note": "럭셔리 리조트."
+    "note": "럭셔리 리조트.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 13.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "세이셸",
@@ -833,7 +1133,11 @@
     "travelType": "휴양",
     "bestMonths": [4, 5, 10, 11],
     "goodMonths": [6, 9],
-    "note": "세계 최고 해변."
+    "note": "세계 최고 해변.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": 12.5,
+    "flightTimeCategory": "울트라 장거리"
   },
   {
     "name": "베이징·상하이",
@@ -844,7 +1148,11 @@
     "travelType": "관광",
     "bestMonths": [4, 5, 9, 10],
     "goodMonths": [3, 6, 11],
-    "note": "만리장성, 자금성, 상하이 야경."
+    "note": "만리장성, 자금성, 상하이 야경.",
+    "budgetCategory": "낮음",
+    "budgetRange": "~ 500만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "홍콩·하이난",
@@ -855,7 +1163,11 @@
     "travelType": "관광+휴양",
     "bestMonths": [10, 11, 12, 1, 2],
     "goodMonths": [3, 4, 9],
-    "note": "홍콩 쇼핑, 하이난 해변 리조트."
+    "note": "홍콩 쇼핑, 하이난 해변 리조트.",
+    "budgetCategory": "높음",
+    "budgetRange": "800만원 ~ 1200만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "청두·구이린",
@@ -866,7 +1178,11 @@
     "travelType": "관광",
     "bestMonths": [4, 5, 9, 10],
     "goodMonths": [3, 6, 11],
-    "note": "판다, 카르스트 지형."
+    "note": "판다, 카르스트 지형.",
+    "budgetCategory": "낮음",
+    "budgetRange": "~ 500만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "울란바토르·고비사막",
@@ -877,7 +1193,11 @@
     "travelType": "관광",
     "bestMonths": [6, 7, 8],
     "goodMonths": [5, 9],
-    "note": "초원, 유목민 문화, 사막."
+    "note": "초원, 유목민 문화, 사막.",
+    "budgetCategory": "낮음",
+    "budgetRange": "~ 500만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "카트만두·포카라",
@@ -888,7 +1208,11 @@
     "travelType": "관광",
     "bestMonths": [10, 11, 3, 4],
     "goodMonths": [9, 12, 2, 5],
-    "note": "에베레스트 트레킹, 사원."
+    "note": "에베레스트 트레킹, 사원.",
+    "budgetCategory": "낮음",
+    "budgetRange": "~ 500만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "아피아",
@@ -899,7 +1223,11 @@
     "travelType": "휴양",
     "bestMonths": [5, 6, 7, 8, 9, 10],
     "goodMonths": [4, 11],
-    "note": "남태평양의 숨은 보석."
+    "note": "남태평양의 숨은 보석.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": 10.5,
+    "flightTimeCategory": "장거리"
   },
   {
     "name": "빈·잘츠부르크",
@@ -910,7 +1238,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 9, 10],
     "goodMonths": [4, 7, 8],
-    "note": "모차르트, 황궁, 알프스."
+    "note": "모차르트, 황궁, 알프스.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "부다페스트",
@@ -921,7 +1253,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 9, 10],
     "goodMonths": [4, 7, 8],
-    "note": "도나우강, 온천욕."
+    "note": "도나우강, 온천욕.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "크라쿠프·바르샤바",
@@ -932,7 +1268,11 @@
     "travelType": "관광",
     "bestMonths": [5, 6, 9, 10],
     "goodMonths": [4, 7, 8],
-    "note": "중세 도시, 역사 유적."
+    "note": "중세 도시, 역사 유적.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "마누엘 안토니오",
@@ -943,7 +1283,11 @@
     "travelType": "휴양",
     "bestMonths": [12, 1, 2, 3, 4],
     "goodMonths": [11],
-    "note": "국립공원, 야생동물."
+    "note": "국립공원, 야생동물.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "리몬",
@@ -954,7 +1298,11 @@
     "travelType": "관광",
     "bestMonths": [2, 3, 9, 10],
     "goodMonths": [1, 4, 8, 11],
-    "note": "카리브해 해변, 문화."
+    "note": "카리브해 해변, 문화.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "우유니 소금사막",
@@ -965,7 +1313,11 @@
     "travelType": "관광",
     "bestMonths": [12, 1, 2, 3],
     "goodMonths": [11, 4],
-    "note": "세계 최대 소금사막."
+    "note": "세계 최대 소금사막.",
+    "budgetCategory": "중간",
+    "budgetRange": "500만원 ~ 800만원",
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   },
   {
     "name": "아바나",
@@ -976,6 +1328,10 @@
     "travelType": "관광",
     "bestMonths": [11, 12, 1, 2, 3, 4],
     "goodMonths": [5, 10],
-    "note": "올드카, 라틴 음악, 시가."
+    "note": "올드카, 라틴 음악, 시가.",
+    "budgetCategory": "매우",
+    "budgetRange": null,
+    "flightTimeHours": null,
+    "flightTimeCategory": null
   }
 ]
