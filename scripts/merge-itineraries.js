@@ -48,8 +48,16 @@ function parseObject(jsObjectText) {
 (async function main() {
   try {
     const html = fs.readFileSync(htmlPath, "utf8");
-    const objText = extractTripDurations(html);
-    const tripDurations = parseObject(objText);
+    let tripDurations = {};
+    try {
+      const objText = extractTripDurations(html);
+      tripDurations = parseObject(objText);
+    } catch (e) {
+      // If embedded tripDurations is not present (we now prefer data/itineraries.json),
+      // fall back to empty object and continue without failing.
+      console.warn("No embedded tripDurations found in index.html, skipping extraction.");
+      tripDurations = {};
+    }
 
     let existing = {};
     if (fs.existsSync(itinerariesPath)) {
