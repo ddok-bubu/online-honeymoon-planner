@@ -33,7 +33,10 @@
           const res = await fetch("data/itineraries.json");
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
           const data = await res.json();
-          Object.assign(window.firebase, data);
+          // Keep firebase helper object intact; store loaded itineraries
+          // in a dedicated runtime variable so the app can reliably
+          // prefer external JSON updates over embedded defaults.
+          window.tripDurations = data;
           // mark loaded and notify listeners
           window.__itineraries_loaded = true;
           window.dispatchEvent(new Event("itineraries:loaded"));
@@ -1209,7 +1212,8 @@
   // 여행지 상세 정보 모달을 띄우는 함수
   function showMapModal(dest) {
     // 여행지별 일정 정보 가져오기
-    const tripInfo = tripDurations[dest.name] || {
+    // 우선적으로 런타임에 로드된 `window.tripDurations` (data/itineraries.json)를 사용
+    const tripInfo = (window.tripDurations && window.tripDurations[dest.name]) || tripDurations[dest.name] || {
       days: "5박7일",
       itinerary: ["정보 준비중입니다"],
     };
@@ -1526,7 +1530,7 @@
       <footer class="max-w-7xl mx-auto mt-12 text-center text-sm text-gray-500" style="color: ${
         colors.info
       };">
-        Copyright &copy; 2025 똑딱부부 All rights reserved.
+        Copyright &copy; 2026 똑딱부부 All rights reserved.
       </footer>`;
     attachEventListeners();
     if (typeof lucide !== "undefined" && lucide.createIcons)
@@ -1575,7 +1579,7 @@
               <i data-lucide="plane" class="w-16 h-16 mb-6 animate-bounce-slow" style="color: ${colors.primary}; stroke-width: 1.5;"></i>
               <h2 class="text-3xl md:text-6xl font-black text-gray-800 tracking-tight mb-8">허니문, 어디로 떠날까요? 🌍</h2>
               <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl font-light">두 분의 여행 스타일, 원하는 시기, 그리고 예산을 고려한 <span class='font-semibold' style="color: ${colors.primary};">가장 완벽한 신혼여행지</span>를 찾아 드립니다.</p>
-              <button id="start-button" class="bg-primary text-white font-extrabold text-xl py-4 px-12 rounded-full shadow-xl hover:bg-opacity-90 transition duration-300 transform hover:scale-[1.05] active:scale-95 border-b-4 border-primary/80" style="background-color: ${colors.primary}; border-color: ${colors.primary}CC;">
+              <button id="start-button" class="bg-primary text-white font-extrabold text-xl py-4 px-12 rounded-2xl shadow-xl hover:bg-opacity-90 transition duration-300 transform hover:scale-[1.05] active:scale-95 border-b-4 border-primary/80" style="background-color: ${colors.primary}; border-color: ${colors.primary}CC;">
                   <i data-lucide="search" class="w-6 h-6 inline-block mr-3"></i>나만의 여행지 추천받기
               </button>
           </div>`;
@@ -1661,14 +1665,14 @@
           };">BEST</span>: 성수기 · <span class="font-bold" style="color: ${
             colors.good
           };">GOOD</span>: 중간기</p>
-                  <div class="mt-4">
+                  <!-- <div class="mt-4">
                       <button onclick="event.stopPropagation(); showPackingModal(${JSON.stringify(
                         dest,
                       ).replace(
                         /\"/g,
                         "&quot;",
                       )})" class="packing-cta-btn w-full">추천 여행템</button>
-                  </div>
+                  </div> -->
               </div>
           </div>`;
   }
@@ -1678,6 +1682,16 @@
     // 여행지 필터링 및 정렬 함수
     const filterAndSortDestinations = () => {
       if (!isFiltered) return destinationsData;
+      // If the user clicked '검색' but no filters or query are set,
+      // explicitly return the full list to avoid accidental partial results.
+      const noFilterSelected =
+        selectedMonth === 0 &&
+        selectedContinent === "모두" &&
+        selectedBudget === "모두" &&
+        selectedPurpose === "모두" &&
+        selectedFlightTime === "모두" &&
+        !(searchQuery || "").trim();
+      if (noFilterSelected) return destinationsData;
       let list = destinationsData.filter((dest) => {
         // 달, 대륙, 예산, 목적, 비행시간 필터링
         const monthMatch =
