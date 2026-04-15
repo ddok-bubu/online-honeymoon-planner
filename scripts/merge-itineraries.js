@@ -55,7 +55,9 @@ function parseObject(jsObjectText) {
     } catch (e) {
       // If embedded tripDurations is not present (we now prefer data/itineraries.json),
       // fall back to empty object and continue without failing.
-      console.warn("No embedded tripDurations found in index.html, skipping extraction.");
+      console.warn(
+        "No embedded tripDurations found in index.html, skipping extraction.",
+      );
       tripDurations = {};
     }
 
